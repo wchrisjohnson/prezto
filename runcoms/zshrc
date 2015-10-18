@@ -11,3 +11,27 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+export LSCOLORS="exfxcxdxbxegedabagacad"
+
+# Prezto theme
+autoload -Uz promptinit
+promptinit
+prompt sorin
+
+# History related stuff
+SAVEHIST=100000
+HISTSIZE=100000
+HISTFILE=~/.zsh/history
+
+setopt APPEND_HISTORY     # Don't erase history
+setopt EXTENDED_HISTORY   # Add additional data to history like timestamp
+setopt INC_APPEND_HISTORY # Add immediately
+setopt HIST_FIND_NO_DUPS  # Don't show duplicates in search
+setopt HIST_IGNORE_SPACE  # Don't preserve spaces. You may want to turn it off
+setopt NO_HIST_BEEP       # Don't beep
+setopt SHARE_HISTORY      # Share history between session/terminals
+
+# Aliases #####
+# OSX
+alias ll='ls -la'
