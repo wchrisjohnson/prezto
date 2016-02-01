@@ -17,7 +17,7 @@ export LSCOLORS="exfxcxdxbxegedabagacad"
 # Prezto theme
 autoload -Uz promptinit
 promptinit
-prompt sorin
+prompt minimal
 
 # History related stuff
 SAVEHIST=100000
