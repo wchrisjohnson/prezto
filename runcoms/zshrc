@@ -35,3 +35,6 @@ setopt SHARE_HISTORY      # Share history between session/terminals
 # Aliases #####
 # OSX
 alias ll='ls -la'
+
+# Load up rbenv
+eval "$(rbenv init -)"
